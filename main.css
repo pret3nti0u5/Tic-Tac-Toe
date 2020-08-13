@@ -15,6 +15,11 @@
     src: url(res/fonts/System\ San\ Francisco\ Display\ Ultralight.ttf);
 }
 
+:root{
+    --bg-color: white;
+    --text-color: black;
+}
+
 body{
     padding: 0%;
     margin: 0px;
@@ -25,7 +30,7 @@ html, body, #container{
 }
 
 #container{
-    background-color: white;
+    background-color: var(--bg-color);
     overflow: auto;
 }
 
@@ -34,6 +39,7 @@ html, body, #container{
     justify-content: center;
     align-items: center;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    color: var(--text-color);
 }
 
 #titleContainer > h1{
@@ -49,6 +55,7 @@ html, body, #container{
     font-size: 20px;    
     height: 26px;
     animation: 1s ease-out 0s 1 slideInFromRight;
+    color: var(--text-color);
 }
 
 #gameOptions > p{
@@ -60,6 +67,7 @@ html, body, #container{
     justify-content: center;
     align-items: flex-start;
     animation: 2s ease-out 0s 1 slideInFromDown;
+    color: var(--text-color);
 }
 
 .border{
@@ -127,7 +135,8 @@ html, body, #container{
     align-content: center;
     width: 164px;
     height: 164px;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
 }
 
 #c00, #c10, #c20{
@@ -224,6 +233,7 @@ html, body, #container{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.5s, opacity 0.5s ease-out;
+    color: var(--text-color);
 }
 
 @keyframes slideInFromLeft {
@@ -394,6 +404,7 @@ html, body, #container{
     font-family: "SFNS-Thin";
     left: 28px;
     top: -11px;
+    width: 80%;
 }
 
 #themeSelectorContainer:hover #dropDownContent{
@@ -436,6 +447,7 @@ html, body, #container{
     color: white;
     font-size: 14px;
     font-family: "SFNS-Thin";
+    width: 80%;
 }
 
 #darkDracula{
@@ -445,6 +457,7 @@ html, body, #container{
     color: white;
     font-size: 14px;
     font-family: "SFNS-Thin";
+    width: 80%;
 }
 
 #seperator{
