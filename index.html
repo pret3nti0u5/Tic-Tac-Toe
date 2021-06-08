@@ -1,84 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Tic-Tac-Toe</title>
-        <link href="main.css" rel="stylesheet"> 
-        <link rel="icon" href="res/icon/icon.ico">
-    </head>
-    <body>
-        <div id="container">
-            <div id="titleContainer">
-                <h1>Tic-Tac-Toe</h1>
-            </div>
-            <div id="gameOptions">
-                <p id="P1" class="noBorder">1-PLAYER</p>
-                <p id="P2" class="noBorder">2-PLAYER</p>
-            </div>
-            <div id="playerInfoContainer">
-                <div id="playerInfo">
-                    <div id="xInput">
-                        <input type="text" value="PLAYER 1" id="playerX" maxlength="19" class="infoInput">
-                        <span id="X">X</span>
-                    </div>
-                    <div id="oInput">
-                        <input type="text" value="PLAYER 2" id="playerO" maxlength="19" class="infoInput">
-                        <span id="O">O</span>
-                    </div>
-                </div>
-            </div>
-            <div id="playGame">
-                <p id="playGameBtn">PLAY GAME</p>
-            </div>
-            <div id="gridContainer">
-                <div id="cellsContainer">
-                    <div id="c00" class="cell"></div>
-                    <div id="c01" class="cell"></div>
-                    <div id="c02" class="cell"></div>
-                    <div id="c10" class="cell"></div>
-                    <div id="c11" class="cell"></div>
-                    <div id="c12" class="cell"></div>
-                    <div id="c20" class="cell"></div>
-                    <div id="c21" class="cell"></div>
-                    <div id="c22" class="cell"></div>
-                </div>
-            </div>
-            <div id="turnContainer"></div>
-            <div class="resetContainer">
-                <img src="res/img/Ei-redo.svg.png" width="64px" id="reset">
-            </div>
-            <div id="alertContainer">
-                <div id="alert">
-                    <div id="titleBar">
-                        <div id="close"></div>
-                    </div>
-                    <p id="alertText">Please select Game type.</p>
-                </div>
-            </div>
-            <div id="alertContainerAlt">
-                <div id="alertAlt">
-                    <div id="titleBarAlt">
-                        <div id="closeAlt"></div>
-                    </div>
-                    <p id="alertTextAlt">Please fill in Player names.</p>
-                </div>
-            </div>
-            <div id="themeSelectorContainer">
-                <div id="themeColor"></div>
-                <div id="themeName">Black and White</div>
-                <div id="dropDownContent">
-                    <div id="pinkTheme" class="themeOption">
-                        <p id="pinkColor"></p>
-                        <p id="pinkWhite">Pink and White</p>
-                    </div>
-                    <div id="seperator"></div>
-                    <div id="darkTheme" class="themeOption">
-                        <p id="darkColor"></p>
-                        <p id="darkDracula">Dark Dracula</p>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Tic-Tac-Toe</title>
+    <link href="main.css" rel="stylesheet" />
+    <link rel="icon" href="res/icon/icon.ico" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="titleContainer">
+        <h1>Tic-Tac-Toe</h1>
+      </div>
+      <div id="gameOptions">
+        <p id="P1" class="noBorder">1-PLAYER</p>
+        <p id="P2" class="noBorder">2-PLAYER</p>
+      </div>
+      <div id="playerInfoContainer">
+        <div id="playerInfo">
+          <div id="xInput">
+            <input
+              type="text"
+              value="PLAYER 1"
+              id="playerX"
+              maxlength="19"
+              class="infoInput"
+            />
+            <span id="X">X</span>
+          </div>
+          <div id="oInput">
+            <input
+              type="text"
+              value="PLAYER 2"
+              id="playerO"
+              maxlength="19"
+              class="infoInput"
+            />
+            <span id="O">O</span>
+          </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+      </div>
+      <div id="playGame">
+        <p id="playGameBtn">PLAY GAME</p>
+      </div>
+      <div id="gridContainer">
+        <div id="cellsContainer">
+          <div id="c00" class="cell"></div>
+          <div id="c01" class="cell"></div>
+          <div id="c02" class="cell"></div>
+          <div id="c10" class="cell"></div>
+          <div id="c11" class="cell"></div>
+          <div id="c12" class="cell"></div>
+          <div id="c20" class="cell"></div>
+          <div id="c21" class="cell"></div>
+          <div id="c22" class="cell"></div>
+        </div>
+      </div>
+      <div id="turnContainer"></div>
+      <div class="resetContainer">
+        <img src="res/img/Ei-redo.svg.png" width="64px" id="reset" />
+      </div>
+      <div id="alertContainer">
+        <div id="alert">
+          <div id="titleBar">
+            <div id="close"></div>
+          </div>
+          <p id="alertText">Please select Game type.</p>
+        </div>
+      </div>
+      <div id="alertContainerAlt">
+        <div id="alertAlt">
+          <div id="titleBarAlt">
+            <div id="closeAlt"></div>
+          </div>
+          <p id="alertTextAlt">Please fill in Player names.</p>
+        </div>
+      </div>
+      <div id="themeSelectorContainer">
+        <div id="themeColor"></div>
+        <div id="themeName">Black and White</div>
+        <div id="dropDownContent">
+          <div id="pinkTheme" class="themeOption">
+            <p id="pinkColor"></p>
+            <p id="pinkWhite">Pink and White</p>
+          </div>
+          <div id="seperator"></div>
+          <div id="darkTheme" class="themeOption">
+            <p id="darkColor"></p>
+            <p id="darkDracula">Dark Dracula</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
